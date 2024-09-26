@@ -20,18 +20,44 @@
 
 /* Begin PBXFileReference section */
 		E183FC082CA5B424006FB763 /* ShiftySums */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ShiftySums; sourceTree = BUILT_PRODUCTS_DIR; };
+		E183FC162CA5B5CE006FB763 /* ShiftySumsTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShiftySumsTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		E183FC1E2CA5B5DD006FB763 /* Exceptions for "ShiftySums" folder in "ShiftySumsTest" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				main.swift,
+			);
+			target = E183FC152CA5B5CE006FB763 /* ShiftySumsTest */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		E183FC0A2CA5B424006FB763 /* ShiftySums */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				E183FC1E2CA5B5DD006FB763 /* Exceptions for "ShiftySums" folder in "ShiftySumsTest" target */,
+			);
 			path = ShiftySums;
+			sourceTree = "<group>";
+		};
+		E183FC172CA5B5CE006FB763 /* ShiftySumsTest */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ShiftySumsTest;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		E183FC052CA5B424006FB763 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E183FC132CA5B5CE006FB763 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -45,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				E183FC0A2CA5B424006FB763 /* ShiftySums */,
+				E183FC172CA5B5CE006FB763 /* ShiftySumsTest */,
 				E183FC092CA5B424006FB763 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				E183FC082CA5B424006FB763 /* ShiftySums */,
+				E183FC162CA5B5CE006FB763 /* ShiftySumsTest.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -82,6 +110,28 @@
 			productReference = E183FC082CA5B424006FB763 /* ShiftySums */;
 			productType = "com.apple.product-type.tool";
 		};
+		E183FC152CA5B5CE006FB763 /* ShiftySumsTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E183FC1A2CA5B5CE006FB763 /* Build configuration list for PBXNativeTarget "ShiftySumsTest" */;
+			buildPhases = (
+				E183FC122CA5B5CE006FB763 /* Sources */,
+				E183FC132CA5B5CE006FB763 /* Frameworks */,
+				E183FC142CA5B5CE006FB763 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				E183FC172CA5B5CE006FB763 /* ShiftySumsTest */,
+			);
+			name = ShiftySumsTest;
+			packageProductDependencies = (
+			);
+			productName = ShiftySumsTest;
+			productReference = E183FC162CA5B5CE006FB763 /* ShiftySumsTest.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -93,6 +143,9 @@
 				LastUpgradeCheck = 1600;
 				TargetAttributes = {
 					E183FC072CA5B424006FB763 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					E183FC152CA5B5CE006FB763 = {
 						CreatedOnToolsVersion = 16.0;
 					};
 				};
@@ -112,12 +165,30 @@
 			projectRoot = "";
 			targets = (
 				E183FC072CA5B424006FB763 /* ShiftySums */,
+				E183FC152CA5B5CE006FB763 /* ShiftySumsTest */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		E183FC142CA5B5CE006FB763 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E183FC042CA5B424006FB763 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E183FC122CA5B5CE006FB763 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -267,6 +338,36 @@
 			};
 			name = Release;
 		};
+		E183FC1B2CA5B5CE006FB763 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HAM63P8GG4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.zhangchase.ShiftySumsTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		E183FC1C2CA5B5CE006FB763 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HAM63P8GG4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.zhangchase.ShiftySumsTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -284,6 +385,15 @@
 			buildConfigurations = (
 				E183FC102CA5B424006FB763 /* Debug */,
 				E183FC112CA5B424006FB763 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E183FC1A2CA5B5CE006FB763 /* Build configuration list for PBXNativeTarget "ShiftySumsTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E183FC1B2CA5B5CE006FB763 /* Debug */,
+				E183FC1C2CA5B5CE006FB763 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
