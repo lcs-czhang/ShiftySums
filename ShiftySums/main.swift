@@ -56,7 +56,7 @@ func getInput(withPrompt prompt: String, minimum: Int?, maximum: Int?) -> Int {
 }
 func shiftTheNumber(number: Int, shift: Int) -> Int {
     var result = 0
-    for i in 0...shift {
+    for _ in 0...shift {
         result = result * 10 + number
     }
     return result
